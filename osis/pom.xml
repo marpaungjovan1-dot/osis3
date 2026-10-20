@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent bawaan dari Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.3</version>
+		<relativePath/>
+	</parent>
+
+	<!-- Identitas Proyek Lu -->
+	<groupId>com.example</groupId>
+	<artifactId>osis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>osis</name>
+	<description>Website Resmi OSIS SMA BPK PENABUR BOGOR</description>
+
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<!-- Dependency / Library yang dipakai -->
+	<dependencies>
+		<!-- Buat bikin web application & API -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Buat nyambungin data Java ke HTML -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- Plugin buat pembungkusan aplikasi jadi file .jar -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
